@@ -17,15 +17,15 @@ Add to your docker-compose.yml :
     volumes:
       - ./:/app
     tty: true
-  ```
-  
-  Launch the containers : 
-  ```
-  docker-compose up -d 
-  ```
-  
-  Then launch the needed tasks within the container, for example : 
-  ```
-  docker-compose exec node npm ci
-  docker-compose exec node gulp build
-  ```
+```
+
+Launch the containers : 
+```
+docker-compose up -d 
+```
+
+Then launch the needed tasks within the container, for example : 
+```
+docker-compose exec node npm ci
+docker-compose exec node gulp build
+```
