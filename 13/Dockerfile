@@ -11,6 +11,7 @@ RUN apk add --update \
     autoconf \
     jpeg-dev \
     zlib-dev \
+    automake \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
