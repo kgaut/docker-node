@@ -1,4 +1,4 @@
-FROM node:13.0.1-alpine
+FROM node:13-alpine
 
 RUN apk add --update \
     python \
@@ -8,11 +8,10 @@ RUN apk add --update \
     git \
     openssh-client \
     optipng \
-    zlib \
-    jpeg-dev \
-    zlib-dev \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
+
+RUN apk add jpeg-dev zlib-dev
 
 RUN npm install -g gulp
 
