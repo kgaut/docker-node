@@ -1,4 +1,4 @@
-FROM node:13-alpine
+FROM node:13.0.1-alpine
 
 RUN apk add --update \
     python \
