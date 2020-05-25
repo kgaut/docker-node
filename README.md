@@ -26,6 +26,6 @@ Add to your docker-compose.yml :
   
   Then launch the needed tasks within the container, for example : 
   ```
-  docker-compose exec -T node npm ci
-  docker-compose exec -T node gulp build
+  docker-compose exec node npm ci
+  docker-compose exec node gulp build
   ```
