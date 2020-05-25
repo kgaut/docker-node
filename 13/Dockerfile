@@ -19,3 +19,5 @@ RUN npm install -g gulp
 WORKDIR /app
 
 RUN npm set progress=false
+
+RUN npm install
