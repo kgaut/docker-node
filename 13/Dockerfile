@@ -8,10 +8,11 @@ RUN apk add --update \
     git \
     openssh-client \
     optipng \
+    autoconf \
+    jpeg-dev \
+    zlib-dev \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
-
-RUN apk add jpeg-dev zlib-dev
 
 RUN npm install -g gulp
 
