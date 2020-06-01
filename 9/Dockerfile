@@ -14,6 +14,7 @@ RUN apk add --update \
     automake \
     libtool \
     pkgconfig \
+    rsync \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
