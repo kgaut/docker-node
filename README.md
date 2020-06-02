@@ -7,6 +7,21 @@ Also usefull for CI / CD tasks to generate assets within a docker container.
 
 See https://hub.docker.com/repository/docker/kgaut/node
 
+# Usage with docker
+
+in a terminal, cd to your app directory and launch the container
+```
+docker run -t -i -v $(eval pwd):/app kgaut/node:13 bash
+```
+It will mount your current directory within the `/app` container directory and open a ssh connexion inside this folder.
+
+Then you'll be abble to launch the needed task. i.e. : 
+
+```
+npm ci
+gulp build
+```
+
 ## Usage with docker-compose
 
 Add to your docker-compose.yml :
