@@ -18,7 +18,7 @@ RUN apk add --update \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
-RUN npm install -g gulp node-gyp
+RUN npm install -g gulp node-gyp foundation-cli
 
 WORKDIR /app
 
