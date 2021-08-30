@@ -20,6 +20,8 @@ RUN apk add --update \
 
 RUN npm install -g gulp foundation-cli
 
+RUN autoconf automake file build-base nasm musl libpng-dev zlib-dev
+
 WORKDIR /app
 
 RUN npm set progress=false
