@@ -15,6 +15,7 @@ RUN apk add --update \
     libtool \
     pkgconfig \
     rsync \
+    nasm \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
