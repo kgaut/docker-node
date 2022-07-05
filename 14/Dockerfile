@@ -14,14 +14,20 @@ RUN apk add --update \
     automake \
     libtool \
     pkgconfig \
+    libpng \
+    libpng-dev \
     rsync \
+    util-linux \
+    vips-dev  \
+    dpkg  \
+    nasm \
+    tiff \
+    jpeg \
+    pkgconf \
+    file \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
-RUN npm install -g gulp foundation-cli
+RUN pip install virtualenv
 
-WORKDIR /app
-
-RUN npm set progress=false
-
-RUN npm install
+RUN npm install -g gulp
