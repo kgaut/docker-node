@@ -27,7 +27,11 @@ RUN apk add --update \
     file \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
-
+  
 RUN pip install virtualenv
+
+WORKDIR /app
+
+RUN npm set progress=false
 
 RUN npm install -g gulp
