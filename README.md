@@ -1,4 +1,10 @@
 # docker-node
+
+# DEPRECATED
+Please use images from this repo : https://gitlab.com/kgaut/docker-node-images
+
+The registry is : https://gitlab.com/kgaut/docker-node-images/container_registry
+
 Docker image to mangage node js task for dev and CI / CD.
 
 Used to manage gulp task on my dev environment without the need to install nodejs on my machine and having to deal with multiple versions issues.
